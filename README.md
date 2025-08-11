@@ -158,10 +158,11 @@ samples/
 
 ### Test with different languages audio that are under 30 seconds
 ```bash
-# Tamil audio test
-curl -X POST "http://127.0.0.1:8000/detect/language" \
-  -H "Content-Type: application/json" \
-  -d '{"audio_file_path": "samples/tamil_sample.mp3", "ground_truth_language": "ta"}'
+# Gujarati audio test
+curl -X POST "http://127.0.0.1:8000/detect/language"   -H "Content-Type: application/json"   -d '{
+        "audio_file_path": "samples/gujarati_sample.mp3",
+        "ground_truth_language": "gu"
+      }'
 ```
 
 ## Configuration
