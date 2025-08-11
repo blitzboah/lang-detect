@@ -20,8 +20,8 @@ This service integrates with 4 major AI providers to detect languages in audio f
 
 ### 1. Clone the repository
 ```bash
-git clone <your-repo-url>
-cd language-detective-service
+git clone https://github.com/blitzboah/lang-detect.git
+cd lang-detect
 ```
 
 ### 2. Install dependencies using UV
@@ -51,7 +51,7 @@ mkdir samples
 
 ### Start the FastAPI server
 ```bash
-uvicorn main:app --reload
+uv run uvicorn main:app --reload
 ```
 
 The service will be available at `http://127.0.0.1:8000`
@@ -68,7 +68,7 @@ The service will be available at `http://127.0.0.1:8000`
 ```json
 {
     "audio_file_path": "samples/gujarati_sample.mp3",
-    "ground_truth_language": "ta"
+    "ground_truth_language": "gu"
 }
 ```
 
