@@ -41,12 +41,6 @@ SARVAM_API_KEY=your_sarvam_api_key_here
 ELEVENLABS_API_KEY=your_elevenlabs_api_key_here
 ```
 
-### 4. Create samples directory
-```bash
-mkdir samples
-# Add your audio files to the samples/ directory
-```
-
 ## Running the Service
 
 ### Start the FastAPI server
